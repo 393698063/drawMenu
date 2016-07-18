@@ -16,11 +16,7 @@
 		4817BBD91D30D107004235BF /* drawMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4817BBD81D30D107004235BF /* drawMenuTests.m */; };
 		4817BBE41D30D107004235BF /* drawMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4817BBE31D30D107004235BF /* drawMenuUITests.m */; };
 		4817BBF31D30D136004235BF /* drawDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4817BBF21D30D136004235BF /* drawDownMenu.m */; };
-		4817BBF61D30D16C004235BF /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817BBF41D30D16C004235BF /* down@2x.png */; };
-		4817BBF71D30D16C004235BF /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817BBF51D30D16C004235BF /* up@2x.png */; };
 		4817BBFA1D34F6EE004235BF /* drawUpMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4817BBF91D34F6EE004235BF /* drawUpMenu.m */; };
-		485632581D35E9DF00457FED /* down@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 4817BBF41D30D16C004235BF /* down@2x.png */; };
-		485632591D35EA6400457FED /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4817BBF41D30D16C004235BF /* down@2x.png */; };
 		4856325B1D35EC5000457FED /* draw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4856325A1D35EC5000457FED /* draw.bundle */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +56,6 @@
 		4817BBE51D30D107004235BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4817BBF11D30D136004235BF /* drawDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawDownMenu.h; sourceTree = "<group>"; };
 		4817BBF21D30D136004235BF /* drawDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawDownMenu.m; sourceTree = "<group>"; };
-		4817BBF41D30D16C004235BF /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
-		4817BBF51D30D16C004235BF /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@2x.png"; sourceTree = "<group>"; };
 		4817BBF81D34F6EE004235BF /* drawUpMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawUpMenu.h; sourceTree = "<group>"; };
 		4817BBF91D34F6EE004235BF /* drawUpMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawUpMenu.m; sourceTree = "<group>"; };
 		485632521D35E9C600457FED /* TestBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,8 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				4856325A1D35EC5000457FED /* draw.bundle */,
-				4817BBF41D30D16C004235BF /* down@2x.png */,
-				4817BBF51D30D16C004235BF /* up@2x.png */,
 				4817BBC11D30D106004235BF /* AppDelegate.h */,
 				4817BBC21D30D106004235BF /* AppDelegate.m */,
 				4817BBC41D30D106004235BF /* ViewController.h */,
@@ -304,11 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4817BBF61D30D16C004235BF /* down@2x.png in Resources */,
 				4856325B1D35EC5000457FED /* draw.bundle in Resources */,
 				4817BBCE1D30D106004235BF /* LaunchScreen.storyboard in Resources */,
 				4817BBCB1D30D106004235BF /* Assets.xcassets in Resources */,
-				4817BBF71D30D16C004235BF /* up@2x.png in Resources */,
 				4817BBC91D30D106004235BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485632591D35EA6400457FED /* down@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485632581D35E9DF00457FED /* down@2x.png in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +627,7 @@
 				485632561D35E9C600457FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

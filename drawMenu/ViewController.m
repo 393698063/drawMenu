@@ -42,7 +42,7 @@
   [self.view addSubview:upMenu];
   
   
-  
+  //一下是遮盖物，可根据实际需求覆写
   UIView * downView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenSize.height - 199, kScreenSize.width, 150)];
   downView.backgroundColor = [UIColor whiteColor];
   downView.userInteractionEnabled = NO;

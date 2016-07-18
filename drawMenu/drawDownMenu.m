@@ -24,7 +24,9 @@
 {
   self = [super initWithFrame:frame];
   if (self) {
-    UIImage *image = [UIImage imageNamed:@"down"];
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"draw" ofType:@"bundle"];
+    NSString * imagePath = [[NSBundle bundleWithPath:path] pathForResource:@"down@2x" ofType:@"png"];
+    UIImage * image = [UIImage imageWithContentsOfFile:imagePath];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     CGFloat x = (self.bounds.size.width - image.size.width)/2.0;
     CGFloat y = 0;
