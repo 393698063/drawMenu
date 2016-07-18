@@ -9,6 +9,6 @@
   CGRect downFrame = downContentView.frame;//设置上拉广告栏的frame
 
 
-3.如果有什么问题欢迎交流，qq～814928338
+3.如果有什么问题欢迎交流，新浪微博jorgon
 
 3.如果对大家有帮助，给颗星吧 -_-。
