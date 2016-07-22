@@ -70,10 +70,6 @@
   UIGestureRecognizerState state = gestureRecognizer.state;
   CGFloat contentHeight = _contentView.frame.size.height;
   NSLog(@"state ---- %ld",(long)state);
-  if (y > (kHeight + contentHeight)) {
-    y = kHeight + contentHeight;
-  }
-  
   BOOL animated = NO;
   if (state == UIGestureRecognizerStateEnded || state == UIGestureRecognizerStateCancelled)
   {
@@ -88,7 +84,7 @@
     }
     animated = YES;
   }
-  else if (state == UIGestureRecognizerStateChanged)
+  else if (state == UIGestureRecognizerStateChanged || state == UIGestureRecognizerStateBegan)
   {
     CGFloat offset = y ;
     if (offset > kHeight + contentHeight) {

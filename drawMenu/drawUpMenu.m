@@ -67,9 +67,6 @@
   UIGestureRecognizerState state = gestureRecognizer.state;
   CGFloat contemntHeight = _contentView.frame.size.height;
   CGFloat maxHeight = [UIScreen mainScreen].bounds.size.height;
-  if (y < (maxHeight - kHeight - contemntHeight)) {
-    y = maxHeight - kHeight - contemntHeight;
-  }
   
   BOOL animated = NO;
   if (state == UIGestureRecognizerStateEnded || state == UIGestureRecognizerStateCancelled)
@@ -85,7 +82,7 @@
     }
     animated = YES;
   }
-  else if (state == UIGestureRecognizerStateChanged)
+  else if (state == UIGestureRecognizerStateChanged || state == UIGestureRecognizerStateBegan)
   {
     CGFloat offset = y - (maxHeight - kHeight - contemntHeight) ;
     if (offset <= 0) {
