@@ -10,4 +10,5 @@
 
 @interface drawDownMenu : UIView
 +(drawDownMenu *)drawMenuView:(UIView *)contentView;
+-(void)hide;
 @end

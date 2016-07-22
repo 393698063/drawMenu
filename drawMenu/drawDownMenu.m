@@ -160,7 +160,10 @@
        rect.origin.y = CGRectGetMaxY(hideFrame);
        self.frame = rect;
      }
-   }completion:nil];
+   }completion:^(BOOL finished)
+   {
+     self.hidden = hidden;
+   }];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {

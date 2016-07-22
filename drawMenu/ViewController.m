@@ -11,7 +11,8 @@
 #import "drawUpMenu.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) drawDownMenu * iDrawDownMenu;
+@property (nonatomic, strong) drawUpMenu * iDrupMenu;
 @end
 
 @implementation ViewController
@@ -27,6 +28,7 @@
   frame.origin.y = 64;
   frame.size.height = 30;
   drawDownMenu * drawMenu = [drawDownMenu drawMenuView:contentView];
+  self.iDrawDownMenu = drawMenu;
   drawMenu.frame = frame;
   [self.view addSubview:drawMenu];
   
@@ -35,6 +37,7 @@
   [self.view addSubview:downContentView];
   
   drawUpMenu * upMenu = [drawUpMenu drawUpMenuView:downContentView];
+  self.iDrupMenu = upMenu;
   CGRect downFrame = downContentView.frame;
   downFrame.origin.y -= 30;
   downFrame.size.height = 30;
@@ -52,8 +55,17 @@
   upView.backgroundColor = [UIColor whiteColor];
   upView.userInteractionEnabled = NO;
   [self.view addSubview:upView];
+  
+  UIButton * button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+  button.frame = CGRectMake(200, 300, 100, 100);
+  [button addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:button];
 }
-
+- (void)action
+{
+  [self.iDrupMenu hide];
+  [self.iDrawDownMenu hide];
+}
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.

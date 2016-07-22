@@ -10,4 +10,5 @@
 
 @interface drawUpMenu : UIView
 +(drawUpMenu *)drawUpMenuView:(UIView *)contentView;
+-(void)hide;
 @end
